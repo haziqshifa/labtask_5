@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About Us - DDT4 S1 Web App</title>
+
+    <link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="tect/css"/>
+
+    <script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+
+    <script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+    <style>
+      .collapsible {
+        background-color: #ac6c6c;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+      }
+      
+      .active, .collapsible:hover {
+        background-color: #ff6464;
+      }
+      
+      .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+      }
+      </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
+                
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Welcome to DDT4 S1 Web App About Us Page</h2>
+            <p>This is a placeholder content for the About Us page. You can provide information about your team members, their roles, and any relevant details about your project.</p>
+            
+        
+            <t3>TEAM MEMBERS :</t3>
+            <!-- Team Members Table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Muhammad Danial Syahmi</td>
+                        <td>Project Manager</td>
+                        <td>mudanial000@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Muhammad Haziq </td>
+                        <td>Developer</td>
+                        <td>haziqnurshifa7@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mohamed Daieyan Rosyaiedy</td>
+                        <td>Hacker</td>
+                        <td>daieyan847@gmail.com</td>
+                    </tr>
+					<tr>
+						<td>Sofea Syafiqa</td>
+                        <td>Master Mind</td>
+                        <td>sofeasyafiqa@gmail.com</td>
+					
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+  
+    
+    <button class="collapsible">Personal Details</button>
+    <div class="content">
+      <p>1.Muhammad Danial Syahmi </p>
+      <center><img src="gambar1.jpg" alt="Trulli"></center>
+      <p>2.Muhammad Haziq</p>
+	  <center><img src="gambar3.jpg" alt="Trulli"></center>
+      <p>3.Mohamed Daieyan</p>
+	  <center><img src="gambar2.jpg" alt="Trulli"></center>
+	  <p>4.Sofea Syafiqa</p>
+	  <center><img src="gambar4.jpg" alt="Trulli"></center>
+    </div>
+    
+	
+	
+	
+    <button class="collapsible">About me</button>
+    <div class="content">
+      <p>We are a student from DDT4C in Politeknik Seberang Perai and we are active in our institute such as Multimedia Club,Majlis Perwakilan Pelajar </p>
+    </div>
+   
+    </div>
+    
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+    <footer>
+        <p>&copy; DDT4 S1 2023/2024. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio - DDT4 S1 Web App</title>
+
+    <style>
+      .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+      }
+      
+      .active, .collapsible:hover {
+        background-color: #555;
+      }
+      
+      .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+      }
+      </style>
+
+
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>OUR AWARDS</h2>
+            
+        </section>
+    </main>
+
+   
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    </head>
+   
+    <button class="collapsible">Our Awards</button>
+    <div class="content">
+      <p>-GRADUATE DIPLOMA AND PENDING DEGREE</p>
+      <p>-CAN CREATE A DECENT WEB SITE</p>
+	  <p>-CAN USE JAVA,CSS,JAVASCRIPT,HTML and C++</p
+    </div>
+    
+    <button class="collapsible">Our Certificate </button>
+    <div class="content">
+    </div>
+	 
+      
+    </div>
+   
+   <h2>Our Certificates</h2>
+   <button class="collapsible">Certificate Viewer</button>
+    <div class="content">
+      <p></p>
+      <center><img src="download.jpeg" alt="Trulli"></center>
+      <center><img src="download.jpeg" alt="Trulli"></center>
+      <center><img src="download.jpeg" alt="Trulli"></center>
+      <center><img src="download.jpeg" alt="Trulli"></center>
+      <p></p>
+    </div>
+
+    
+    
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+    
+    <footer>
+      <p>&copy; DDT4 S1 2023/2024. All rights reserved.</p>
+  </footer>
+    
+    
+</body>
+</html>
